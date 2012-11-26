@@ -52,7 +52,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>C4.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.ce3c.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

@@ -9,7 +9,7 @@
 #import "C4TiledView.h"
 
 @implementation C4TiledView {
-    C4Image *bigImage;
+//    C4Image *bigImage;
 }
 
 @synthesize tilePrefix = _tilePrefix;
@@ -25,17 +25,18 @@
 }
 
 -(id)initWithImageName:(NSString *)imageName {
-    bigImage = [C4Image imageNamed:imageName];
+    C4Image *bigImage = [C4Image imageNamed:imageName];
     self = [super initWithFrame:bigImage.frame];
-    if(self != nil) {
+    if(self != nil && bigImage != nil) {
         _tilePrefix = [[imageName stringByDeletingPathExtension] stringByAppendingString:@"_"];
 
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
         NSString *directoryPath = [paths objectAtIndex:0];
         _tileDirectory = directoryPath;
         
-        [self saveTilesOfSize:(CGSize){256, 768} forImage:bigImage.UIImage toDirectory:self.tileDirectory usingPrefix:self.tilePrefix];
+        [self saveTilesOfSize:(CGSize){256, 256} forImage:bigImage.UIImage toDirectory:self.tileDirectory usingPrefix:self.tilePrefix];
     }
+    bigImage = nil;
     return self;
 }
 

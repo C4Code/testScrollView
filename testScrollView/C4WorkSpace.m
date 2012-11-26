@@ -15,13 +15,23 @@
 }
 
 -(void)setup {
-	tiledView = [C4TiledView tiledViewWithName:@"scroll.png"];
     
-    scrollView = [[UIScrollView alloc] initWithFrame:self.canvas.frame];
-    scrollView.contentSize = tiledView.frame.size;
-    [scrollView addSubview:tiledView];
-    
-    [self.canvas addSubview:scrollView];
+    for(int i = 0 ; i < 30; i++) {
+        NSString *imageName = [NSString stringWithFormat:@"myImage_%d.png",i];
+        C4Image *newImage = [C4Image imageNamed:imageName];
+        [self.canvas addImage:newImage];
+        newImage.origin = CGPointMake(10, 10);
+    }
 }
-					
+
+//-(void)setup {
+//	tiledView = [C4TiledView tiledViewWithName:@"scroll.png"];
+//    
+//    scrollView = [[UIScrollView alloc] initWithFrame:self.canvas.frame];
+//    scrollView.contentSize = tiledView.frame.size;
+//    [scrollView addSubview:tiledView];
+//    
+//    [self.canvas addSubview:scrollView];
+//}
+//					
 @end

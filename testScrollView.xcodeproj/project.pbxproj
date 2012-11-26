@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED3D3515165AD75000F9AD7A /* scroll@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3D3514165AD75000F9AD7A /* scroll@2x.png */; };
 		ED5348ED1651ABA700963578 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5348EC1651ABA700963578 /* Accelerate.framework */; };
 		ED5348EF1651ABA700963578 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5348EE1651ABA700963578 /* AVFoundation.framework */; };
 		ED5348F11651ABA700963578 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5348F01651ABA700963578 /* CoreFoundation.framework */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED3D3514165AD75000F9AD7A /* scroll@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scroll@2x.png"; sourceTree = "<group>"; };
 		ED5348E81651ABA700963578 /* testScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5348EC1651ABA700963578 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		ED5348EE1651ABA700963578 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -199,6 +201,7 @@
 				ED53496F1651ABFE00963578 /* middle.png */,
 				ED5349701651ABFE00963578 /* front.png */,
 				ED5349711651ABFE00963578 /* scroll.png */,
+				ED3D3514165AD75000F9AD7A /* scroll@2x.png */,
 				ED5349111651ABA800963578 /* Framework */,
 				ED5349371651ABA900963578 /* Media */,
 				ED5349401651ABAA00963578 /* Logos */,
@@ -370,6 +373,7 @@
 				ED5349731651ABFE00963578 /* middle.png in Resources */,
 				ED5349741651ABFE00963578 /* front.png in Resources */,
 				ED5349751651ABFE00963578 /* scroll.png in Resources */,
+				ED3D3515165AD75000F9AD7A /* scroll@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,14 +468,17 @@
 		ED5349691651ABAA00963578 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Kirton (ERSMBG886A)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testScrollView/testScrollView-Prefix.pch";
 				INFOPLIST_FILE = "testScrollView/testScrollView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/testScrollView/Library\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "89F4065B-6A05-42A2-997D-A1A98DC5044B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -479,14 +486,17 @@
 		ED53496A1651ABAA00963578 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Kirton (ERSMBG886A)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testScrollView/testScrollView-Prefix.pch";
 				INFOPLIST_FILE = "testScrollView/testScrollView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/testScrollView/Library\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "89F4065B-6A05-42A2-997D-A1A98DC5044B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -510,6 +520,7 @@
 				ED53496A1651ABAA00963578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
