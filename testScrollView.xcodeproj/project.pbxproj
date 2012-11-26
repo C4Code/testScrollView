@@ -468,7 +468,7 @@
 		ED5349691651ABAA00963578 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Kirton (ERSMBG886A)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Stuart Kirton (L8K667RYG7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testScrollView/testScrollView-Prefix.pch";
 				INFOPLIST_FILE = "testScrollView/testScrollView-Info.plist";
@@ -478,7 +478,7 @@
 					"\"$(SRCROOT)/testScrollView/Library\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "89F4065B-6A05-42A2-997D-A1A98DC5044B";
+				PROVISIONING_PROFILE = "F211C8CA-7630-4986-8DA2-7D0353D1DA62";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -486,7 +486,7 @@
 		ED53496A1651ABAA00963578 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Kirton (ERSMBG886A)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Stuart Kirton (L8K667RYG7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testScrollView/testScrollView-Prefix.pch";
 				INFOPLIST_FILE = "testScrollView/testScrollView-Info.plist";
@@ -496,7 +496,7 @@
 					"\"$(SRCROOT)/testScrollView/Library\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "89F4065B-6A05-42A2-997D-A1A98DC5044B";
+				PROVISIONING_PROFILE = "F211C8CA-7630-4986-8DA2-7D0353D1DA62";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
